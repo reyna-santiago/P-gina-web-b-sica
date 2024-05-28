@@ -1,0 +1,135 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #c4dcf3; /* Color de fondo gris claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #67c9f5; /* Azul claro */
+    color: #fefeff; /* Texto blanco */
+    padding: 20px;
+    text-align: center; /* Centrar el texto */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar elementos horizontalmente */
+}
+
+.university-logo {
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-right: 20px;
+}
+
+.career-logo {
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-left: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #324888; /* Azul oscuro */
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fefeff; /* Texto blanco */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f9aa1b; /* Amarillo al pasar el mouse */
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fefeff; /* Fondo blanco */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: justify; /* Justifica el texto */
+}
+
+/* Galería de imágenes */
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Centrar la galería horizontalmente */
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-bottom: 20px;
+}
+
+.image-gallery img {
+    width: 30%;
+    height: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #324888; /* Azul oscuro */
+    padding: 10px;
+    color: #fefeff; /* Texto blanco */
+}
+
+/* Estilos para dispositivos de pantalla pequeña (teléfonos móviles) */
+@media screen and (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 80%;
+    }
+}
